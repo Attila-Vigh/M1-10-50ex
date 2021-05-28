@@ -2,10 +2,14 @@
 body {
     max-width: 80%;
 }
+/* Ex.12: Set every h1 to be centered */
+h1 {
+    text-align: center;
+}
 /* 
     CSS EXERCISES
 
-    Ex.12: Set every h1 to be centered
+    
     Ex.13: Change the color of each link in the page
     Ex.14: Create a class with a border
     Ex.15: Set table to have rounded corners
