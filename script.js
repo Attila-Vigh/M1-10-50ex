@@ -34,13 +34,25 @@ let strings = [
 for (const string of strings) {
     console.log(string);
 }
+// Ex.26: Create an array with 100 random numbers in it
+
+let randomNumbers = [];
+let numbers = 100
+
+for (let i = 0; i < numbers; i++) {
+    let randomNumber = Math.floor(Math.random() * 101)
+    randomNumbers.push(randomNumber)
+}
+console.log( randomNumbers);
+
+// Ex.27: Wrote a function to get the MAX and the MIN from the previously created array
+
+const max = () => Math.max( ...randomNumbers)
+console.log(max());
+
 
 // JS EXERCISES
 
-
-
-// Ex.26: Create an array with 100 random numbers in it
-// Ex.27: Wrote a function to get the MAX and the MIN from the previously created array
 // Ex.28: Create an array of arrays, in which every array has 10 random numbers
 // Ex.29: Create a function that gets 2 arrays and returns the longest one
 // Ex.30: Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
