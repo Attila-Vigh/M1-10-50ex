@@ -97,9 +97,12 @@ for (const td of tds) {
 // Ex.34: Write a function to change the heading of the page
 const changePageHeading = () => document.querySelect("h1").innerHTML = "New Title"
 
+// Ex.35: Write a function to add an extra row to the table
+const addRow = () => document.querySelectAll("tr").innerHTML += `<tr></tr>`
+
+
 // DOM 
 
-// Ex.35: Write a function to add an extra row to the table
 // Ex.36: Write a function to add the class "test" to each row in the table
 // Ex.37: Write a function to add a red background to every link in the page
 // Ex.38: Console log "Page loaded" when the page is correctly loaded
