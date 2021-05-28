@@ -71,7 +71,14 @@ for (let i = 0; i < numberOfArrays; i++) {
 }
 console.log( arrays);
 
+// Ex.29: Create a function that gets 2 arrays and returns the longest one
+
+const longestArray = (arr1, arr2) => arr1.lenght >= arr1.lenght ? arr1 : arr2
+
+
+
+
+
 // JS EXERCISES
 
-// Ex.29: Create a function that gets 2 arrays and returns the longest one
 // Ex.30: Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
