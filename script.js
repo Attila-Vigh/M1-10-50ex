@@ -9,11 +9,14 @@ let person = {
     surname : "", 
     email : ""
 }
+// Ex.23: Delete Email from the previously created object
 
+delete person.email
+
+console.log(person);
 
 // JS EXERCISES
 
-// Ex.23: Delete Email from the previously created object
 // Ex.24: Create an array with 10 strings in it
 // Ex.25: Print in the console every string in the previous array
 // Ex.26: Create an array with 100 random numbers in it
