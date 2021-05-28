@@ -6,11 +6,14 @@ body {
 h1 {
     text-align: center;
 }
+/* Ex.13: Change the color of each link in the page */
+a {
+    color: rgb(212, 34, 3)
+}
+
 /* 
     CSS EXERCISES
 
-    
-    Ex.13: Change the color of each link in the page
     Ex.14: Create a class with a border
     Ex.15: Set table to have rounded corners
     Ex.16: Add margin between every paragraph
