@@ -84,5 +84,19 @@ const hinghestSum = (arr1, arr2) => {
     return sum1 >= sum2 ? sum1 : sum2
 }
 
+// Ex.31: Get element with ID "container" from the page
 
+let container = document.querySelect("#container")
+
+// DOM 
+
+// Ex.32: Get every "td" from the page
+// Ex.33: Create a cycle that prints the text inside every td of the page
+// Ex.34: Write a function to change the heading of the page
+// Ex.35: Write a function to add an extra row to the table
+// Ex.36: Write a function to add the class "test" to each row in the table
+// Ex.37: Write a function to add a red background to every link in the page
+// Ex.38: Console log "Page loaded" when the page is correctly loaded
+// Ex.39: Write a function to add new items to a UL
+// Ex.40: Write a function to empty a list
 
