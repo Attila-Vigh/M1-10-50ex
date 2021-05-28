@@ -73,12 +73,16 @@ console.log( arrays);
 
 // Ex.29: Create a function that gets 2 arrays and returns the longest one
 
-const longestArray = (arr1, arr2) => arr1.lenght >= arr1.lenght ? arr1 : arr2
-
-
-
-
-
-// JS EXERCISES
+const longestArray = (arr1, arr2) => arr1.lenght >= arr2.lenght ? arr1 : arr2
 
 // Ex.30: Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
+
+const hinghestSum = (arr1, arr2) => {
+    sum1 = arr1.reduce((a, b) => a + b, 0)
+    sum2 = arr2.reduce((a, b) => a + b, 0)
+    
+    return sum1 >= sum2 ? sum1 : sum2
+}
+
+
+
