@@ -10,11 +10,14 @@ h1 {
 a {
     color: rgb(212, 34, 3)
 }
+/* Ex.14: Create a class with a border */
+.links {
+    border-top: 1px solid
+}
 
 /* 
     CSS EXERCISES
 
-    Ex.14: Create a class with a border
     Ex.15: Set table to have rounded corners
     Ex.16: Add margin between every paragraph
     Ex.17: Create a class which change font size and boldness
