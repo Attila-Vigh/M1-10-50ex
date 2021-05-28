@@ -17,7 +17,7 @@ console.log(person);
 
 // Ex.24: Create an array with 10 strings in it
 
-let words = [
+let strings = [
     "Other times",
     "I let the dream guide me",
     "and ",
@@ -29,12 +29,16 @@ let words = [
     "and experience the dream ",
     "in real-life intensity.",
 ];
+// Ex.25: Print in the console every string in the previous array
+
+for (const string of strings) {
+    console.log(string);
+}
 
 // JS EXERCISES
 
 
 
-// Ex.25: Print in the console every string in the previous array
 // Ex.26: Create an array with 100 random numbers in it
 // Ex.27: Wrote a function to get the MAX and the MIN from the previously created array
 // Ex.28: Create an array of arrays, in which every array has 10 random numbers
