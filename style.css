@@ -22,11 +22,14 @@ table {
 p {
     margin: 30px 0;
 }
-
+/* Ex.17: Create a class which change font size and boldness */
+.fontAndBOldness {
+    font-size: 2em;
+    font-weight: bolder;
+}
 /* 
     CSS EXERCISES
 
-    Ex.17: Create a class which change font size and boldness
     Ex.18: Create a class to hide a content
     Ex.19: Add a green border to each td
     Ex.20: Add a dotted red border to each tr (note: tr does not accept a border property ;-) 
