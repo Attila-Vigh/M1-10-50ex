@@ -94,11 +94,11 @@ let tds = document.querySelectAll("td")
 for (const td of tds) {
     td.innerHTML = "text"
 }
-
+// Ex.34: Write a function to change the heading of the page
+const changePageHeading = () => document.querySelect("h1").innerHTML = "New Title"
 
 // DOM 
 
-// Ex.34: Write a function to change the heading of the page
 // Ex.35: Write a function to add an extra row to the table
 // Ex.36: Write a function to add the class "test" to each row in the table
 // Ex.37: Write a function to add a red background to every link in the page
