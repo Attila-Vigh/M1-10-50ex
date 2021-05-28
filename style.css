@@ -27,10 +27,14 @@ p {
     font-size: 2em;
     font-weight: bolder;
 }
+/* Ex.18: Create a class to hide a content */
+.hide {
+    visibility: hidden;
+}
+
 /* 
     CSS EXERCISES
 
-    Ex.18: Create a class to hide a content
     Ex.19: Add a green border to each td
     Ex.20: Add a dotted red border to each tr (note: tr does not accept a border property ;-) 
 
