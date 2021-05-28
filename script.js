@@ -85,12 +85,15 @@ const hinghestSum = (arr1, arr2) => {
 }
 
 // Ex.31: Get element with ID "container" from the page
-
 let container = document.querySelect("#container")
+
+// Ex.32: Get every "td" from the page
+let tds = document.querySelectAll("td")
+
+
 
 // DOM 
 
-// Ex.32: Get every "td" from the page
 // Ex.33: Create a cycle that prints the text inside every td of the page
 // Ex.34: Write a function to change the heading of the page
 // Ex.35: Write a function to add an extra row to the table
