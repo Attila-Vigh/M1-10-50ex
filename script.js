@@ -47,12 +47,31 @@ console.log( randomNumbers);
 
 // Ex.27: Wrote a function to get the MAX and the MIN from the previously created array
 
-const max = () => Math.max( ...randomNumbers)
-console.log(max());
+const maxAndMin = () => ({
+    max: Math.max( ...randomNumbers),
+    min: Math.min( ...randomNumbers)
+})
 
+console.log(maxAndMin());
+
+// Ex.28: Create an array of arrays, in which every array has 10 random numbers
+
+
+let nums = 100
+let numberOfArrays = 10
+let arrays = []
+for (let i = 0; i < numberOfArrays; i++) {
+    
+    let randomNumbers = [];
+    for (let j = 0; j < nums; j++) {
+        let randomNumber = Math.floor(Math.random() * 101)
+        randomNumbers.push(randomNumber)
+    }
+    arrays.push(randomNumbers)
+}
+console.log( arrays);
 
 // JS EXERCISES
 
-// Ex.28: Create an array of arrays, in which every array has 10 random numbers
 // Ex.29: Create a function that gets 2 arrays and returns the longest one
 // Ex.30: Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
