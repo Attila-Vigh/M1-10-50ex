@@ -1,0 +1,18 @@
+/* Ex.11: Give a maximum width to the body and center it in the page */
+body {
+    max-width: 80%;
+}
+/* 
+    CSS EXERCISES
+
+    Ex.12: Set every h1 to be centered
+    Ex.13: Change the color of each link in the page
+    Ex.14: Create a class with a border
+    Ex.15: Set table to have rounded corners
+    Ex.16: Add margin between every paragraph
+    Ex.17: Create a class which change font size and boldness
+    Ex.18: Create a class to hide a content
+    Ex.19: Add a green border to each td
+    Ex.20: Add a dotted red border to each tr (note: tr does not accept a border property ;-) 
+
+*/
