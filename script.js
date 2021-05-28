@@ -90,11 +90,14 @@ let container = document.querySelect("#container")
 // Ex.32: Get every "td" from the page
 let tds = document.querySelectAll("td")
 
+// Ex.33: Create a cycle that prints the text inside every td of the page
+for (const td of tds) {
+    td.innerHTML = "text"
+}
 
 
 // DOM 
 
-// Ex.33: Create a cycle that prints the text inside every td of the page
 // Ex.34: Write a function to change the heading of the page
 // Ex.35: Write a function to add an extra row to the table
 // Ex.36: Write a function to add the class "test" to each row in the table
