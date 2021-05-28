@@ -32,14 +32,9 @@ p {
     visibility: hidden;
 }
 /* Ex.19: Add a green border to each td */
+/* Ex.20: Add a dotted red border to each tr (note: tr does not accept a border property ;-)  */
 td {
     border: solid green;
+    border-bottom: dotted red;
 }
 
-
-/* 
-    CSS EXERCISES
-
-    Ex.20: Add a dotted red border to each tr (note: tr does not accept a border property ;-) 
-
-*/
