@@ -206,7 +206,6 @@ const hideAllImages = () => {
     allImages.forEach( img => img.classList.toggle( 'hidden' ) )
     )
 }
-
 hideAllImages()
 // Ex.43: Add a button to hide and show the table from the page
 console.log("Ex.43: ")
@@ -218,12 +217,21 @@ const hideTable = () => {
     button.addEventListener("click", () => table.classList.toggle( 'hidden' ))
 
 }
-
 hideTable()
 
 // Ex.44: Write a function to sum every number inside the TD (if the content is numeric)
 console.log("Ex.44: ")
 
+const sumNumbersInsideTDs = () => {
+    const tds = [ ...document.querySelectorAll("td")]
+    console.log(tds)
+
+    return tds.map   ((td)              => td.innerText)
+              .filter(isNumber          => Number( isNumber))
+              .reduce((sum = 0, number) => Number( sum) + Number( number) )
+}
+
+console.log(sumNumbersInsideTDs())
 // Ex.45: Delete the last letter from the title each time the user clicks on it
 console.log("Ex.45: ")
 
