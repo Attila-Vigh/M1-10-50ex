@@ -124,6 +124,7 @@ for (const td of tds) {
     // td.innerHTML = "text"
 }
 // Ex.34: Write a function to change the heading of the page
+<<<<<<< HEAD
 console.log("Ex.34: ");
 const changePageHeading = () => document.querySelector("h1").innerHTML = "New Title"
 changePageHeading()
@@ -133,6 +134,16 @@ console.log("Ex.35: ");
 const addRow = () =>  document.querySelector("tbody").innerHTML += `<tr>new row</tr>`
 addRow()
 
+=======
+const changePageHeading = () => document.querySelect("h1").innerHTML = "New Title"
+
+// Ex.35: Write a function to add an extra row to the table
+const addRow = () => document.querySelectAll("tr").innerHTML += `<tr></tr>`
+
+
+// DOM 
+
+>>>>>>> bf5cef82d8fa825cc6e00487e20392d48441f299
 // Ex.36: Write a function to add the class "test" to each row in the table
 console.log("Ex.36: ");
 
