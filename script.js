@@ -254,11 +254,22 @@ const changeTdBackgroundOnClick = () => {
 }
 changeTdBackgroundOnClick()
 
-/**
- * 
-    // Ex.47: Add a button DELETE, on click it should delete a random TD from the page
-    console.log("Ex.47: ")
+// Ex.47: Add a button DELETE, on click it should delete a random TD from the page
+console.log("Ex.47: ")
+
+const randomTdDelete = () => {
+    const tds = document.querySelectorAll("td")
+    const btnRandomTDdelete = document.querySelector(".btn-randomTDdelete")
+
     
+    btnRandomTDdelete.onclick = () => {
+        let randomNum = Math.floor(Math.random() * tds.length)
+        tds[randomNum].remove()
+    }
+}
+randomTdDelete()
+
+/*
     // Ex.48: Add a pink border to a cell when the mouse is over it
     console.log("Ex.48: ")
     
