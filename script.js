@@ -1,3 +1,5 @@
+//* JS EXERCISES
+
 // Ex.21: Given variable x = "John" and y = "Doe", write on the console log "John <> Doe"
 console.log("Ex.21: ");
 let x = "John" 
@@ -93,6 +95,8 @@ let arr2 = [ 1, 2, 3]
 
 console.log(longestArray(arr1, arr2)); 
 
+//* DOM 
+
 // Ex.30: Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
 console.log("Ex.30: ");
 
@@ -128,9 +132,6 @@ changePageHeading()
 console.log("Ex.35: ");
 const addRow = () =>  document.querySelector("tbody").innerHTML += `<tr>new row</tr>`
 addRow()
-
-
-// DOM 
 
 // Ex.36: Write a function to add the class "test" to each row in the table
 console.log("Ex.36: ");
@@ -180,3 +181,44 @@ const emptyList = () => {
 }
 
 emptyList()
+
+//*  EXTRA 
+
+// Ex.41: Add an eventListener to alert when the mouse is over a link, displaying the URL
+console.log("Ex.41: ")
+
+const onMouseOverLink = function(){
+    const links = document.querySelectorAll("a")
+
+    links.forEach( 
+        link => link.addEventListener( "mouseover", () => alert(link.href) )
+    )
+} 
+onMouseOverLink()
+// Ex.42: Add a button to hide every image on the page
+console.log("Ex.42: ")
+
+// Ex.43: Add a button to hide and show the table from the page
+console.log("Ex.43: ")
+
+// Ex.44: Write a function to sum every number inside the TD (if the content is numeric)
+console.log("Ex.44: ")
+
+// Ex.45: Delete the last letter from the title each time the user clicks on it
+console.log("Ex.45: ")
+
+// Ex.46: Change a single TD background color when the user clicks on it
+console.log("Ex.46: ")
+
+// Ex.47: Add a button DELETE, on click it should delete a random TD from the page
+console.log("Ex.47: ")
+
+// Ex.48: Add a pink border to a cell when the mouse is over it
+console.log("Ex.48: ")
+
+// Ex.49: Write a function to add a table with 4 rows and 3 columns programmatically
+console.log("Ex.49: ")
+
+// Ex.50: Write a function to remove the table from the page
+console.log("Ex.50: ")
+
