@@ -230,11 +230,18 @@ const sumNumbersInsideTDs = () => {
               .filter(isNumber          => Number( isNumber))
               .reduce((sum = 0, number) => Number( sum) + Number( number) )
 }
-
 console.log(sumNumbersInsideTDs())
+
 // Ex.45: Delete the last letter from the title each time the user clicks on it
 console.log("Ex.45: ")
 
+const deleteFirstLetterOnCLick = () => {
+    const title = document.querySelector("h1")
+
+    title.onclick = () => title.textContent = title.textContent.substr(1)
+}
+
+deleteFirstLetterOnCLick()
 // Ex.46: Change a single TD background color when the user clicks on it
 console.log("Ex.46: ")
 
