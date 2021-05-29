@@ -200,16 +200,26 @@ console.log("Ex.42: ")
 
 const hideAllImages = () => {
     const allImages = document.querySelectorAll('img')
-    const button = document.querySelector("button")
-
+    const button = document.querySelector(".btn-hideAllImages")
+    
     button.addEventListener('click', () =>
-        allImages.forEach( img => img.classList.toggle( 'hidden' ) )
+    allImages.forEach( img => img.classList.toggle( 'hidden' ) )
     )
 }
 
 hideAllImages()
 // Ex.43: Add a button to hide and show the table from the page
 console.log("Ex.43: ")
+
+const hideTable = () => {
+    const button = document.querySelector(".btn-hideTable")
+    const table = document.querySelector("table")
+    
+    button.addEventListener("click", () => table.classList.toggle( 'hidden' ))
+
+}
+
+hideTable()
 
 // Ex.44: Write a function to sum every number inside the TD (if the content is numeric)
 console.log("Ex.44: ")
