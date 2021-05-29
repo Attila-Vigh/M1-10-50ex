@@ -145,6 +145,7 @@ addClassTestToRows()
 
 // Ex.37: Write a function to add a red background to every link in the page
 console.log("Ex.37: ");
+
 const addClassToRows = () => {
     const links = document.querySelectorAll("a")
     for (const link of links) 
@@ -161,6 +162,14 @@ window.onload = function() {
 
 // Ex.39: Write a function to add new items to a UL
 console.log("Ex.39: ");
+
+const addItemsToUL = function (content) {
+    const ul = document.querySelector("ul")
+
+    ul.insertAdjacentHTML('beforeend', `<li>${content}</li>` )
+}
+addItemsToUL("New item added")
+
 // Ex.40: Write a function to empty a list
 console.log("Ex.40: ");
 
