@@ -198,6 +198,16 @@ onMouseOverLink()
 // Ex.42: Add a button to hide every image on the page
 console.log("Ex.42: ")
 
+const hideAllImages = () => {
+    const allImages = document.querySelectorAll('img')
+    const button = document.querySelector("button")
+
+    button.addEventListener('click', () =>
+        allImages.forEach( img => img.classList.toggle( 'hidden' ) )
+    )
+}
+
+hideAllImages()
 // Ex.43: Add a button to hide and show the table from the page
 console.log("Ex.43: ")
 

@@ -38,3 +38,16 @@ td {
     border-bottom: dotted red;
 }
 
+ /* Ex.42: Add a button to hide every image on the page */
+button {
+    width: 200px;
+    height: 50px;
+    border-radius: 6px;
+    background-color: red;
+    color: antiquewhite;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+.hidden {
+    visibility: hidden;
+}
