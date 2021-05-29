@@ -117,7 +117,7 @@ let tds = document.querySelectorAll("td")
 // Ex.33: Create a cycle that prints the text inside every td of the page
 console.log("Ex.33: ");
 for (const td of tds) {
-    td.innerHTML = "text"
+    // td.innerHTML = "text"
 }
 // Ex.34: Write a function to change the heading of the page
 console.log("Ex.34: ");
@@ -135,24 +135,30 @@ addRow()
 // Ex.36: Write a function to add the class "test" to each row in the table
 console.log("Ex.36: ");
 
-const addClassToRows = () => {
+const addClassTestToRows = () => {
     const tableRows = document.querySelectorAll("tr")
     for (const tableRow of tableRows) 
         tableRow.classList.add("test")
 
 }
-addClassToRows()
+addClassTestToRows()
 
 // Ex.37: Write a function to add a red background to every link in the page
 console.log("Ex.37: ");
 const addClassToRows = () => {
-    const tableRows = document.querySelectorAll("tr")
-    for (const tableRow of tableRows) 
-        tableRow.classList.add("test")
+    const links = document.querySelectorAll("a")
+    for (const link of links) 
+        link.style.backgroundColor = "red"
 
 }
+addClassToRows()
 // Ex.38: Console log "Page loaded" when the page is correctly loaded
 console.log("Ex.38: ");
+
+window.onload = function() {
+    console.log("Page loaded");
+}
+
 // Ex.39: Write a function to add new items to a UL
 console.log("Ex.39: ");
 // Ex.40: Write a function to empty a list
