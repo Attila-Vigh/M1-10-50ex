@@ -240,20 +240,33 @@ const deleteFirstLetterOnCLick = () => {
 
     title.onclick = () => title.textContent = title.textContent.substr(1)
 }
-
 deleteFirstLetterOnCLick()
+
 // Ex.46: Change a single TD background color when the user clicks on it
 console.log("Ex.46: ")
 
-// Ex.47: Add a button DELETE, on click it should delete a random TD from the page
-console.log("Ex.47: ")
+const changeTdBackgroundOnClick = () => {
+    const tds = document.querySelectorAll("td")
+    
+    tds.forEach( td => 
+        td.onclick = () => td.style.backgroundColor = "brown"
+    )
+}
+changeTdBackgroundOnClick()
 
-// Ex.48: Add a pink border to a cell when the mouse is over it
-console.log("Ex.48: ")
-
-// Ex.49: Write a function to add a table with 4 rows and 3 columns programmatically
-console.log("Ex.49: ")
-
-// Ex.50: Write a function to remove the table from the page
-console.log("Ex.50: ")
-
+/**
+ * 
+    // Ex.47: Add a button DELETE, on click it should delete a random TD from the page
+    console.log("Ex.47: ")
+    
+    // Ex.48: Add a pink border to a cell when the mouse is over it
+    console.log("Ex.48: ")
+    
+    // Ex.49: Write a function to add a table with 4 rows and 3 columns programmatically
+    console.log("Ex.49: ")
+    
+    // Ex.50: Write a function to remove the table from the page
+    console.log("Ex.50: ")
+    
+    */
+    
