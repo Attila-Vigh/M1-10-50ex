@@ -130,3 +130,25 @@ const addRow = () =>  document.querySelector("tbody").innerHTML += `<tr>new row<
 addRow()
 
 
+// DOM 
+
+// Ex.36: Write a function to add the class "test" to each row in the table
+console.log("Ex.36: ");
+
+const addClassToRows = () => {
+    const tableRows = document.querySelectorAll("tr")
+    for (const tableRow of tableRows) 
+        tableRow.classList.add("test")
+
+}
+addClassToRows()
+
+// Ex.37: Write a function to add a red background to every link in the page
+console.log("Ex.37: ");
+// Ex.38: Console log "Page loaded" when the page is correctly loaded
+console.log("Ex.38: ");
+// Ex.39: Write a function to add new items to a UL
+console.log("Ex.39: ");
+// Ex.40: Write a function to empty a list
+console.log("Ex.40: ");
+
