@@ -167,7 +167,7 @@ console.log("Ex.39: ");
 const addItemsToUL = function (content) {
     const ul = document.querySelector("ul")
 
-    ul.insertAdjacentHTML('beforeend', `<li>${content}</li>` )
+    ul.insertAdjacentHTML("beforeend", `<li>${content}</li>` )
 }
 addItemsToUL("New item added")
 
@@ -281,11 +281,21 @@ const addPinkBorder = () => {
 }
 addPinkBorder()
 
+
+// Ex.49: Write a function to add a table with 4 rows and 3 columns programmatically
+console.log("Ex.49: ")
+
+const addTable = (td=3, tr=4) => {
+    const table = document.createElement("table")
+    
+    td = `<td></td>`.repeat(td)     
+    table.innerHTML += `<tr>${td}</tr>`.repeat(tr)
+
+    return table
+}
+console.log( addTable());
+
 /*
-    
-    // Ex.49: Write a function to add a table with 4 rows and 3 columns programmatically
-    console.log("Ex.49: ")
-    
     // Ex.50: Write a function to remove the table from the page
     console.log("Ex.50: ")
     
