@@ -295,9 +295,9 @@ const addTable = (td=3, tr=4) => {
 }
 console.log( addTable());
 
-/*
-    // Ex.50: Write a function to remove the table from the page
-    console.log("Ex.50: ")
+// Ex.50: Write a function to remove the table from the page
+console.log("Ex.50: ")
     
-    */
-    
+const removeTable = () => document.querySelector("table").remove()
+
+// removeTable()
