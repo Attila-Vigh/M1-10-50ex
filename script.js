@@ -173,3 +173,10 @@ addItemsToUL("New item added")
 // Ex.40: Write a function to empty a list
 console.log("Ex.40: ");
 
+const emptyList = () => {
+    const ul = document.querySelector("ul")
+
+    ul.innerHTML = ""
+}
+
+emptyList()
