@@ -260,7 +260,7 @@ console.log("Ex.47: ")
 const randomTdDelete = () => {
     const tds = document.querySelectorAll("td")
     const btnRandomTDdelete = document.querySelector(".btn-randomTDdelete")
-
+    
     
     btnRandomTDdelete.onclick = () => {
         let randomNum = Math.floor(Math.random() * tds.length)
@@ -269,9 +269,19 @@ const randomTdDelete = () => {
 }
 randomTdDelete()
 
+// Ex.48: Add a pink border to a cell when the mouse is over it
+console.log("Ex.48: ")
+
+const addPinkBorder = () => {
+    const tds = document.querySelectorAll("td")
+    
+    tds.forEach( td => 
+        td.addEventListener('mouseover', () => td.style.border = "2px solid pink")
+    )
+}
+addPinkBorder()
+
 /*
-    // Ex.48: Add a pink border to a cell when the mouse is over it
-    console.log("Ex.48: ")
     
     // Ex.49: Write a function to add a table with 4 rows and 3 columns programmatically
     console.log("Ex.49: ")
