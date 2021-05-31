@@ -4,6 +4,8 @@
 console.log("Ex.21: ");
 let x = "John" 
 let y = "Doe"
+// console.log(`${x} <> ${y}`);
+
 // Ex.22: Create an object with properties such name, surname, email
 console.log("Ex.22: ");
 
@@ -89,21 +91,33 @@ const longestArray = (arr1, arr2) => arr1.length >= arr2.length ? arr1 : arr2
 
 let arr1 = [ 1, 2]
 let arr2 = [ 1, 2, 3]
-
 // console.log(longestArray(arr1, arr2)); 
 
-//* DOM 
-
-// Ex.30: Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
 console.log("Ex.30: ");
 
 const sum = (arr) => arr.reduce((a, b) => a + b, 0)
 const hinghestSum = (arr1, arr2) =>( 
     sum(arr1) >= sum(arr2) 
-        ? sum(arr1) 
-        : sum(arr2)
-)
-// console.log( hinghestSum(arrays[1], arrays[2]));
+    ? sum(arr1) 
+    : sum(arr2)
+    )
+    // console.log( hinghestSum(arrays[1], arrays[2]));
+    
+    
+// Ex.30: Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
+const hinghestSum2 = (arr1, arr2) => {
+    let sum1 = sum2 = 0
+
+    for (const elem of arr1) 
+        sum1 += elem
+    for (const elem of arr2) 
+        sum2 += elem
+    return sum1 >= sum2 
+            ? sum1 
+            : sum2
+}
+console.log("hinghestSum2(arr1, arr2): ", hinghestSum2(arr1, arr2));
+//* DOM 
 
 // Ex.31: Get element with ID "container" from the page
 console.log("Ex.31: ");
@@ -224,7 +238,7 @@ console.log("Ex.44: ")
 
 const sumNumbersInsideTDs = () => (
     [ ...document.querySelectorAll("td")]                               // Get all td
-        .map   ((td)              => td.innerText)                      // get all the text inside the td
+        .map   ( td               => td.innerText)                      // get all the text inside the td
         .filter(isNumber          => Number( isNumber))                 // get strings which are just numbers 
         .reduce((sum = 0, number) => Number( sum) + Number( number) )   // because filter() will return strings they have to be parsed again to number type
 )
@@ -258,12 +272,12 @@ changeTdBackgroundOnClick()
 console.log("Ex.47: ")
 
 const randomTdDelete = () => {
-    const tds = document.querySelectorAll("td")
+    const tds               = document.querySelectorAll("td")
     const btnRandomTDdelete = document.querySelector(".btn-randomTDdelete")
     
     btnRandomTDdelete.onclick = () => {
         let randomNum = Math.floor(Math.random() * tds.length)
-        
+
         tds[randomNum].remove()
     }
 }
@@ -287,15 +301,26 @@ addPinkBorder()
 console.log("Ex.49: ")
 
 const addTable = (td=3, tr=4) => {
-    const table = document.createElement("table")
+    const body = document.querySelector("body")
     
-    table.innerHTML += `<tr>
-                            ${ `<td></td>`.repeat(td) }
-                        </tr>`.repeat(tr)
-
-    return table
+    return body.innerHTML += 
+        `<table>
+            ${`<tr>
+                ${ `<td>text</td>`.repeat(td) }
+            </tr>`.repeat(tr)}
+        </table>
+        `
 }
-console.log( addTable());
+addTable()
+
+// const addTable = (td=2, tr=5) => document.querySelector("body").innerHTML += 
+//         `<table>
+//             ${`<tr>
+//                 ${ `<td>text</td>`.repeat(td) }
+//             </tr>`.repeat(tr)}
+//         </table>
+//         `
+// addTable(3,4)
 
 // Ex.50: Write a function to remove the table from the page
 console.log("Ex.50: ")
